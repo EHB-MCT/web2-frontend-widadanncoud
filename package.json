@@ -1,0 +1,26 @@
+{
+  "name": "web2-frontend-widadanncoud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EHB-MCT/web2-frontend-widadanncoud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EHB-MCT/web2-frontend-widadanncoud/issues"
+  },
+  "homepage": "https://github.com/EHB-MCT/web2-frontend-widadanncoud#readme",
+  "dependencies": {
+    "cleave.js": "^1.6.0",
+    "webpack": "^5.64.3",
+    "webpack-cli": "^4.9.1"
+  }
+}
