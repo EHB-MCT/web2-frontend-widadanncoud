@@ -1,0 +1,360 @@
+body{
+    margin: 0%;
+    /* background-image: url(./Imgs/cement-texture.jpg); */
+    background-color: #fcf8db;
+    
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+}
+
+/* html{
+    background-image: url(./Imgs/cooking.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+} */
+
+/* body{
+    background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,247,236,1) 42%, rgba(255,237,214,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+} */
+
+/* NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION */
+nav{
+    /* background-color: #D5E3A6; */
+    background-color: rgba(87, 58, 26, 0.808)
+}
+
+.divInNav{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.ulNav{
+    display: flex;
+    justify-content: space-between;
+    /* width: 80%; */
+    align-items: center;
+    list-style: none;
+    /* padding-right: 20%; */
+    padding-left: 0;
+    margin-top: 0;
+    color: white;
+    padding: none;
+}
+
+.navHome{
+    border: 2px white;
+}
+
+li a{
+    color: white;
+    list-style: none;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.logoNav{
+    width: 30pt;
+}
+
+.liLinksNav{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    align-items: center;
+}
+
+.liRechsNav{
+    width: 75%;
+    display: flex;
+    justify-content:right;
+    
+}
+
+.liLinksNav img{
+    padding-left: 10pt;
+    padding-right: 20pt;
+}
+
+.liRechsNav img{
+    padding-left: 10pt;
+    padding-right: 20pt;
+}
+
+li{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Logo */
+
+.logo{
+    width: 20%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+
+main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10%;
+}
+
+.cooking{
+    width: 100%;
+    margin: 0;
+    /* margin-top: -12pt; */
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
+}
+
+.center{
+    text-align:center;
+    flex-wrap: nowrap;
+}
+
+h1{
+    color: #FE9D2B;
+    margin-top: 150pt;
+    font-size: 60pt;
+    margin-bottom: 50pt;
+    /* padding-bottom: 10pt; */
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(158, 158, 158);
+}
+
+h2{
+    color: #FDD3A3;
+    margin-top: 10%;
+    font-size: 25pt;
+    margin-bottom: 0;
+    /* padding-bottom: 10pt; */
+    padding-top: 20pt;
+    /* text-shadow: 1px 1px 2px rgb(158, 158, 158); */
+    
+}
+/* #searchResults{
+    margin-top: 0;
+    
+} */
+
+/* MAKE YOUR CHOICE MAKE YOUR CHOICE MAKE YOUR CHOICE MAKE YOUR CHOICE */
+.input{
+    border-radius: 5px;
+    border-collapse:collapse;
+    margin-right: 10pt;
+    resize: none;
+    width: 400px;
+    -moz-border-radius:5px; -webkit-border-radius:5px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5pt;
+    border: 2px solid #FE9D2B;
+}
+
+.makeYourChoice{
+    display: flex;   
+}
+
+#diet {
+    border-radius: 20pt;
+    border-color: #FE9D2B;
+    border: 1px solid #FE9D2B;
+    margin-right: 8pt;
+    padding-top:3pt;
+}
+
+.disabledSelected{
+    background-color: #FE9D2B;
+}
+
+#country {
+    border-radius: 20pt;
+    margin-right: 8pt;
+    border: 1px solid #FE9D2B;
+    padding-top:3pt;
+}
+#meal {
+    border-radius: 20pt;
+    margin-right: 8pt;
+    border: 1px solid #FE9D2B;
+    padding-top:3pt;
+}
+
+.button {
+    border-radius: 20pt;
+    background-color: #FDD3A3;
+    border: none;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    padding-top: 3pt;
+    
+}
+
+.center textarea{
+    border-radius: 20pt;
+    margin-right: 8pt;
+    padding-top: 3pt;
+}
+
+.center {
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER IMG FOOTER IMG FOOTER IMG FOOTER IMG FOOTER IMG FOOTER IMG FOOTER IMG */
+
+footer {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.top{
+    background-color: #FDD3A3;
+    color: white;
+    padding: 10pt;
+    border: none;
+    border-radius: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 10%;
+    text-align:center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-decoration: none;
+    list-style: none;
+    border-bottom: none;
+    box-shadow: 2px 2px 3px rgb(202, 202, 202);
+}
+
+
+#goToTop{
+    text-decoration: none;
+    list-style: none;
+    border-bottom: none;
+}
+
+/* CARD CARD CARD CARD CARD CARD CARD CARD CARD CARD CARD CARD CARD */
+
+.card{
+    /* background-color: #EAF2D0; */
+    /* background-color: rgb(255, 255, 255); */
+    /* border-radius: 20pt; */
+    padding-bottom: 1%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 0 10pt 10pt;
+    padding-bottom: 25pt;
+    
+}
+
+.oneCard{
+    /* background-color: #EAF2D0; */
+    background-color: #ffffff85;
+    width: 150pt;
+    /* border-radius: 20pt; */
+    padding-bottom: 1%;
+    margin-top: 15pt;
+    margin-right: 10pt;
+    /* box-shadow: 0px 0px 5px rgb(158, 158, 158); */
+    
+}
+
+.returnRecipes{
+    /* box-shadow: 0px 0px 5px rgb(158, 158, 158);
+    background-color: rgb(255, 255, 255); */
+    margin-top: 50pt;
+}
+
+.card img{
+    width: 100%;
+    /* border-radius: 20pt; */
+    /* max-height: 150pt; */
+}
+
+.cardContent{
+    padding-left: 15pt;
+    padding-right: 15pt;
+    padding-bottom: 10pt;
+}
+
+h5{
+    margin: 0;
+    color: rgb(78, 78, 78);
+}
+h3{
+    color: rgb(78, 78, 78);
+}
+
+.card button{
+    border-radius: 20pt;
+    border-bottom: none;
+    border: none;
+    margin-top: 20pt ;
+    border: 1.5px solid rgb(255, 255, 255);
+    background-color: #ffffff;
+    color: rgb(78, 78, 78);
+    box-shadow: 0px 0px 5px rgba(158, 158, 158, 0.445);
+}
+
+.card a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+}
+
+.cardRecipe{
+    padding: 2pt 20pt 2pt 20pt;
+}
+
+.cardFavo{
+    padding: 2pt 5pt 2pt 5pt;
+}
+
+.oneCard{
+    /* padding-right: 20%; */
+}
+
+.labelButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+ 
+<body>
+
+
+    <nav class="nav">
+        <div class="divInNav">
+            <ul class="ulNav">
+                <div class="liLinksNav">
+                    <li><a class="" href="./home.html"></a> <img src="./Imgs/smallWitLogo2.png" alt="" class="logoNav"> </li>
+                    <li><a class="navHome" href="./home.html">home</a> </li>
+                    <!-- <li><a class="navFav" href="./favorites.html">favorites</a></li> -->
+                    <li><a class="navProf" href="./profile.html">profile</a></li>
+                </div>
+                <li style="float:right" class="liRechsNav"><a class="navLogOut"href="./logIn1.html">log out</a> </li>
+            </ul>
+        </div>
+        
+    </nav>
+
+    
+
+    <!-- <img class="logo" src="./Imgs/logo.png" alt=""> -->
+
+    <main>
+        <img class="cooking" src="./Imgs/meal3.png" alt="">
+
+        
+        <h1 id="goToTop">Healthy Recipes</h1>
+
+        <p class="center">Tell us what you want and we will find the perfect recipe for you!</p>
+
+        <article class="choice">
+            <div class="center">
+                <!-- <textarea  name="" id="" cols="30" rows="1" style="border-radius: 5pt;">What are you hungry for?</textarea> -->
+
+                <input class="input" style="border: 0.5px solid #FE9D2B;" type="text" placeholder="What are you hungry for?" >
+
+                <select name="diet" id="diet">
+                    <option value="" disabled selected>diet</option>
+                    <option value="balanced">balanced</option>
+                    <option value="high-fiber">high-fiber</option>
+                    <option value="low-carb">low-carb</option>
+                    <option value="low-fat">low-fat</option>
+                    <option value="low-sodium">low-sodium</option>
+                </select>
+
+                <select name="country" id="country">
+                    <option class="disabledSelected" disabled selected>cuisine </option>
+                    <option value="Italian">Italian </option>
+                    <option value="French">French </option>
+                    <option value="British">British </option>
+                    <option value="Chinese">Chinese </option>
+                    <option value="Japanese">Japanese </option>
+                    <option value="Asian">Asian </option>
+                    <option value="South East Asia">South East Asia </option>
+                    <option value="Eastern Europe ">Eastern Europe </option>
+                    <option value="American">American </option>
+                    <option value="South America">South America </option>
+                    <option value="Nordic">Nordic </option>
+                    <option value="Middle Eastern">Middle Eastern </option>
+                    <option value="Mediteranean">Mediteranean </option>
+                    <option value="Kosher">Kosher </option>
+                    <option value="Central">Central </option>
+                    <option value="Carribean">Carribean </option>
+            
+                </select>
+
+                <select name="meal" id="meal">
+                    <option value="" disabled selected>meal </option>
+                    <option value="breakfast">dinner </option>
+                    <option value="breakfast">breakfast </option>
+                    <option value="lunch">lunch </option>
+                    <option value="snack">snack </option>
+                    <option value="teatime">teatime </option>
+                </select>
+
+                <button class="button"><img src="./Imgs/iconLoupe.png" alt="" width="25pt"></button>
+
+            </div>
+        </article>
+
+        <article class="returnRecipes">
+            <!-- <h2 id="goToTop" class="center">Your Search Results</h2> -->
+            <!-- <h3 id="searchResults" class="center">Search Results</h3> -->
+
+                <article class="card" >
+                    <div class="oneCard" style="display: none;" >
+                        
+                    </div>   
+                     
+                </article>
+        </article>
+        
+       <a class="top" href="#goToTop" style="display: none;"> go to top </a> 
+       
+
+    </main>
+
+    <script type="module" src="home.js"></script>
+    
+</body>
+</html>
