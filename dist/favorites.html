@@ -5,51 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./favorites.css">
+    <link rel="stylesheet" href="./favorites.css"> 
+    <link href="//db.onlinewebfonts.com/c/e163c6518afdb5035f3933758c68e480?family=SylfaenW01-Regular" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="divInNav">
-            <ul class="ulNav">
-                <div class="liLinksNav">
-                    <li > <a id="#goToTop" href="./home.html"></a> <img src="./Imgs/smallWitLogo2.png" alt="" class="logoNav"> </li>
-                    <li><a href="./index.html">home</a> <img src="./Imgs/emoticonHouse.png" alt="" width="20pt"></li>
-                    <li><a href="./favorites.html">favorites</a><img src="./Imgs/emoticonHeart.png" alt="" width="20pt"></li>
-                    <li><a href="./profile.html">profile</a><img src="./Imgs/emoticonProfiel.png" alt="" width="20pt"></li>
-                </div>
-                <li style="float:right" class="liRechsNav"><a href="./logIn1.html">log out</a> <img src="./Imgs/emoticonLogOut.png" alt="" width="20pt"> </li>
-            </ul>
-        </div>
-    </nav>
-
+  
     <main>
-        <h1 href="goToTop">My list of favorites</h1>
-
-        <article class="card">
-            <img src="./Imgs/couscous.png" alt="">
-            <div class="cardContent">
-                <h3>Couscous royal 
-                    aux 3 viandes</h3>
-                <h5>high-proteine</h5>
-                <h5>mediterranean</h5>
-                <h5>dinner</h5>
-
-                <button class="cardRecipe"><a href="">recipe</a></button>
-                <button class="cardFavo">heart<img src="" alt=""></button>
-            </div>              
+        <article class="navi">
+            <nav class="nav">
+                    <div class="divInNav">
+                        <ul class="ulNav">
+                            <div class="liBoven">
+                                <li><a class="smallLogo" href="./index.html"></a> <img src="./Imgs/smallWitLogo2.png" width="200pt" alt="" class="logoNav"> </li>
+                                <li><a class="navHome" href="./index.html">home</a> </li>
+                                <li><a class="navFav" href="./favorites.html">favorites</a></li>
+                                <li><a class="navProf" href="./profile.html">profile</a></li>
+                            </div>
+                                
+                            <div class="liBeneden">
+                                <li><a class="navLogOut"href="./logIn1.html">log out</a> </li> 
+                            </div>
+                                
+                                
+                        </ul>
+                    </div>                    
+                </nav>
         </article>
 
-        
-        <a class="top" href="#goToTop"> go to top </a>
+        <article class="searching">
 
-       
+            <h1 href="goToTop">My list of favorites</h1>
+
+            <article class="card">
+                <img src="./Imgs/couscous.png" alt="">
+                <div class="cardContent">
+                    <h3>Couscous royal 
+                        aux 3 viandes</h3>
+                    <h5>high-proteine</h5>
+                    <h5>mediterranean</h5>
+                    <h5>dinner</h5>
+
+                    <button class="cardRecipe"><a href="">recipe</a></button>
+                    <button class="cardFavo">heart<img src="" alt=""></button>
+                </div>              
+            </article>
+        </article>
 
     </main>
-
-    
-
-
     
 </body>
 </html>

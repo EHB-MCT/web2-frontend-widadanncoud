@@ -6,57 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./profile.css">
+    <link href="//db.onlinewebfonts.com/c/e163c6518afdb5035f3933758c68e480?family=SylfaenW01-Regular" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
-    <nav class="nav">
-        <div class="divInNav">
-            <ul class="ulNav">
-                <div class="liLinksNav">
-                    <li > <a id="#goToTop" href="./home.html"></a> <img src="./Imgs/smallWitLogo2.png" alt="" class="logoNav"> </li>
-                    <li><a href="./index.html">home</a> <img src="./Imgs/emoticonHouse.png" alt="" width="20pt"></li>
-                    <li><a href="./favorites.html">favorites</a><img src="./Imgs/emoticonHeart.png" alt="" width="20pt"></li>
-                    <li><a href="./profile.html">profile</a><img src="./Imgs/emoticonProfiel.png" alt="" width="20pt"></li>
-                </div>
-                <li style="float:right" class="liRechsNav"><a href="./logIn1.html">log out</a> <img src="./Imgs/emoticonLogOut.png" alt="" width="20pt"> </li>
-            </ul>
-        </div>
-        
-    </nav>
-
     <main>
 
-        <div class="ProfileLinks">
-            <h1>Profile</h1>
-            <img src="./Imgs/profilePic.png" alt="" width="50%" >
-            <div class="icons">
-                <img src="./Imgs/iconPotlood.png" alt="" width="20">
-                <img src="./Imgs/iconBin.png" alt="" width="20">
+        <article class="navi">
+            <nav class="nav">
+                    <div class="divInNav">
+                        <ul class="ulNav">
+                            <div class="liBoven">
+                                <li><a class="smallLogo" href="./index.html"></a> <img src="./Imgs/smallWitLogo2.png" width="200pt" alt="" class="logoNav"> </li>
+                                <li><a class="navHome" href="./index.html">home</a> </li>
+                                <li><a class="navFav" href="./favorites.html">favorites</a></li>
+                                <li><a class="navProf" href="./profile.html">profile</a></li>
+                            </div>
+                                
+                            <div class="liBeneden">
+                                <li><a class="navLogOut"href="./logIn1.html">log out</a> </li> 
+                            </div>
+                                
+                                
+                        </ul>
+                    </div>                    
+                </nav>
+        </article>
+
+        <article class="searching">
+            <div class="profile">
+                <div class="ProfileLinks">
+                    <h1>Profile</h1>
+                    <img src="./Imgs/profilePic.png" alt="" width="50%" >
+                    <div class="icons">
+                        <img src="./Imgs/iconPotlood.png" alt="" width="20">
+                        <img src="./Imgs/iconBin.png" alt="" width="20">
+                </div>
+                <h3>Natasha Fils</h3>   
             </div>
-            <h3>Natasha Fils</h3>   
-        </div>
 
-        <div class="ProfileRechs">
-            <h3>personal information</h3>
+            <div class="ProfileRechs">
+                <h3>personal information</h3>
+                
+                <p class="profileGegevens2">username :</p>
+                <p class="profileGegevens">username <img src="./Imgs/iconPotlood.png" alt="" width="15"></p> 
+
+                <p class="profileGegevens2">name :</p>
+                <p class="profileGegevens" >name <img src="./Imgs/iconPotlood.png" alt="" width="15"></p>
+
+                <p class="profileGegevens2">e-mail :</p>
+                <p class="profileGegevens">e-mail <img src="./Imgs/iconPotlood.png" alt="" width="15"></p>
+
+                <p class="profileGegevens2">password :</p>
+                <p class="profileGegevens">password <img src="./Imgs/iconPotlood.png" alt="" width="15"></p>
+
+                <button class="loginButton" type="submit"> <a href="./logIn1.html">log out</a></button>
+            </div>
+            </div>
             
-            <p class="profileGegevens2">username :</p>
-            <p class="profileGegevens">username <img src="./Imgs/iconPotlood.png" alt="" width="15"></p> 
+        </article>
 
-            <p class="profileGegevens2">name :</p>
-            <p class="profileGegevens" >name <img src="./Imgs/iconPotlood.png" alt="" width="15"></p>
-
-            <p class="profileGegevens2">e-mail :</p>
-            <p class="profileGegevens">e-mail <img src="./Imgs/iconPotlood.png" alt="" width="15"></p>
-
-            <p class="profileGegevens2">password :</p>
-            <p class="profileGegevens">password <img src="./Imgs/iconPotlood.png" alt="" width="15"></p>
-
-            <button class="loginButton" type="submit"> <a href="./logIn1.html">log out</a></button>
-        </div>
+        
 
 
     </main>
-
+ 
     <footer>
         <img src="./Imgs/profileBackground.png" alt="" width="100%" >
     </footer>

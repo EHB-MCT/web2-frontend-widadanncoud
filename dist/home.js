@@ -41,6 +41,7 @@ function generateCards(data){
          <div class="oneCard" style="display: flex; flex-direction: column;" >
             <img src="${c.recipe.image}" alt="">
             <div class="cardContent">
+            
                 <h3>${c.recipe.label}</h3>
                 
                 <h5>${c.recipe.dietLabels}</h5>
@@ -49,6 +50,7 @@ function generateCards(data){
 
                 <button class="cardRecipe"><a target="_blank" href="${c.recipe.url}">recipe</a></button>
                 <button class="cardFavo">heart<img src="" alt=""></button>
+
             </div>  
              
         </div>  
