@@ -39,7 +39,7 @@ function generateCards(data){
     for(let c of data.hits){
          htmlString += `
          <div class="oneCard" style="display: flex; flex-direction: column;" >
-            <img src="${c.recipe.image}" alt="">
+            <img class="cardImgs" src="${c.recipe.image}" alt="">
             <div class="cardContent">
             
                 <h3>${c.recipe.label}</h3>
@@ -49,7 +49,7 @@ function generateCards(data){
                 <h5>${c.recipe.cuisineType}</h5>
 
                 <button class="cardRecipe"><a target="_blank" href="${c.recipe.url}">recipe</a></button>
-                <button class="cardFavo">heart<img src="" alt=""></button>
+                <button class="cardFavo"> <img class="cardHaert" src="./Imgs/emoticonHeart.png" alt=""> </button>
 
             </div>  
              

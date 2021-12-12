@@ -1,7 +1,15 @@
 body{
     margin: 0%;
-    background-color: #fcf8db;
+    background-color: #fbf9ea;
     display: flex
+}
+
+main{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 10%;
 }
 
 @import url(//db.onlinewebfonts.com/c/e163c6518afdb5035f3933758c68e480?family=SylfaenW01-Regular);
@@ -88,6 +96,11 @@ nav{
     padding-top: 200pt;
 }
 
+li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20pt;
+}
 
 li a{
     color: white;
@@ -101,12 +114,6 @@ li a{
     margin-right: auto;
     display: block;
     width: 50%;
-    padding-bottom: 20pt;
-}
-
-li{
-    display: flex;
-    align-items: center;
     padding-bottom: 20pt;
 }
 
@@ -125,15 +132,6 @@ li{
 
 
 /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
-
-main{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    margin-top: 10%;
-    
-}
 
 .searching{
     width: 90%;
@@ -176,7 +174,6 @@ main{
     margin-right: 8pt;
     padding-top:3pt;
 }
-
 #country {
     border-radius: 20pt;
     margin-right: 8pt;
@@ -197,7 +194,6 @@ main{
     padding-left: 10pt;
     padding-right: 10pt;
     padding-top: 3pt;
-    
 }
 
 .center {
@@ -263,31 +259,32 @@ main{
     display: block;
 }
 
-.card img{
-    width: 100%;
-}
-
 .cardContent{
     padding-left: 15pt;
     padding-right: 15pt;
     padding-bottom: 10pt;
 }
 
-.card button{
-    border-radius: 20pt;
-    border-bottom: none;
-    border: none;
-    margin-top: 20pt ;
-    border: 1.5px solid rgb(255, 255, 255);
-    background-color: #ffffff;
-    color: rgb(78, 78, 78);
-    box-shadow: 0px 0px 5px rgba(158, 158, 158, 0.445);
-}
 
 .card a {
     list-style: none;
     text-decoration: none;
-    color: rgb(78, 78, 78);
+    color: rgb(255, 255, 255);
+}
+
+.card button{
+    border-radius: 20pt;
+    margin-top: 20pt ;
+    border-bottom: none;
+    border: none;
+    border: 1.5px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: #FDD3A3;
+}
+
+.cardHaert{
+    width: 100%;
+    margin-top: 3pt;
 }
 
 .cardRecipe{
@@ -296,12 +293,9 @@ main{
 
 .cardFavo{
     padding: 2pt 5pt 2pt 5pt;
+    width: 25pt;
 }
 
-.labelButtons{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding-top: 50pt;
+.emoticonHeart{
+    width: 15pt;
 }
