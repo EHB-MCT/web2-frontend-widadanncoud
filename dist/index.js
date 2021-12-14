@@ -31,7 +31,7 @@ function fetchAPI(){
     document.querySelector(".top").style.display = "block";
     
 }
-
+ 
 
 function generateCards(data){
     let htmlString = "";
