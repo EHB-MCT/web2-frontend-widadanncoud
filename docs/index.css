@@ -39,6 +39,7 @@ h1{
     text-shadow: 1px 1px 2px rgb(158, 158, 158);
     font-family: SylfaenW01-Regular;
     font-weight: 200;
+    padding-right: 40pt;
 }
 
 h2{
@@ -129,7 +130,18 @@ li a{
     padding-top: 10pt;
     padding-bottom: 10pt;
 }
-
+.navFav:hover{
+    background-color: rgba(255, 255, 255, 0.26);
+    transition: all ease-in-out 0.2s;
+}
+.navProf:hover{
+    background-color: rgba(255, 255, 255, 0.26);
+    transition: all ease-in-out 0.2s;
+}
+.navLogOut:hover{
+    background-color: rgba(255, 255, 255, 0.26);
+    transition: all ease-in-out 0.2s;
+}
 
 /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
 
@@ -202,6 +214,31 @@ li a{
     justify-content: center;
 }
 
+.crud{
+    margin-top: 10pt;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.crudButtons{
+    padding-top: 3pt;
+    border-radius: 20pt;
+    border: none;
+    width: 32px;
+    height: 32px;
+    background-color: #FDD3A3;
+    cursor: pointer;
+    margin-left: 5pt;
+}
+.crudButtons:hover{
+    background-color: #fab566;
+    transition: all ease-in-out 0.2s;
+}
+.button:hover{
+    background-color: #fab566;
+    transition: all ease-in-out 0.2s;
+}
 /* FOOTER IMG FOOTER IMG FOOTER IMG FOOTER IMG FOOTER IMG FOOTER IMG FOOTER IMG */
 
 .top{

@@ -118,6 +118,19 @@ li{
     padding-bottom: 10pt;
 }
 
+.navHome:hover{
+    background-color: rgba(255, 255, 255, 0.26);
+    transition: all ease-in-out 0.2s;
+}
+.navProf:hover{
+    background-color: rgba(255, 255, 255, 0.26);
+    transition: all ease-in-out 0.2s;
+}
+.navLogOut:hover{
+    background-color: rgba(255, 255, 255, 0.26);
+    transition: all ease-in-out 0.2s;
+}
+
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 
 .top{

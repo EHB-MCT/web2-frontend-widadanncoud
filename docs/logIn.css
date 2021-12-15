@@ -4,12 +4,24 @@ body {
     overflow-y: hidden;
 }
 
+@import url(//db.onlinewebfonts.com/c/e163c6518afdb5035f3933758c68e480?family=SylfaenW01-Regular);
+
+@font-face {font-family: "SylfaenW01-Regular"; 
+    src: url("//db.onlinewebfonts.com/t/e163c6518afdb5035f3933758c68e480.eot"); 
+    src: url("//db.onlinewebfonts.com/t/e163c6518afdb5035f3933758c68e480.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/e163c6518afdb5035f3933758c68e480.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/e163c6518afdb5035f3933758c68e480.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/e163c6518afdb5035f3933758c68e480.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/e163c6518afdb5035f3933758c68e480.svg#SylfaenW01-Regular") format("svg"); }
+
 h1{
     color: #ffffff;
     margin-top: 8%;
     font-size: 60pt;
     margin-bottom: 35%;
     text-align: center;
+    font-family: SylfaenW01-Regular;
+    font-weight: 200;
 }
 
 .h2Login{
@@ -19,6 +31,8 @@ h1{
     font-size: 40pt;
     margin-bottom: 30pt;
     padding-bottom: 10pt;
+    font-family: SylfaenW01-Regular;
+    
     
     /* text-shadow: 1px 1px 2px rgb(158, 158, 158); */
 }

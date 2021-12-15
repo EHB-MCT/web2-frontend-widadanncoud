@@ -1,118 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <link href="//db.onlinewebfonts.com/c/e163c6518afdb5035f3933758c68e480?family=SylfaenW01-Regular" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/e163c6518afdb5035f3933758c68e480?family=SylfaenW01-Regular" rel="stylesheet"
+        type="text/css" />
 </head>
- 
+
 <body>
- 
+
     <main>
-    
-    <!-- BACKGROUND IMG -->
+
+        <!-- BACKGROUND IMG -->
         <img class="cooking" src="./Imgs/meal4.png" alt="">
 
-    <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
         <article class="navi">
             <nav class="nav">
-                    <div class="divInNav">
-                        <ul class="ulNav">
-                            <div class="liBoven">
-                                <li><a class="smallLogo" href="./index.html"></a> <img src="./Imgs/smallWitLogo2.png" width="200pt" alt="" class="logoNav"> </li>
-                                <li><a class="navHome" href="./index.html">home</a> </li>
-                                <li><a class="navFav" href="./favorites.html">favorites</a></li>
-                                <li><a class="navProf" href="./profile.html">profile</a></li>
-                            </div>
-                                
-                            <div class="liBeneden">
-                                <li><a class="navLogOut"href="./logIn.html">log out</a> </li> 
-                            </div>
-                                
-                                
-                        </ul>
-                    </div>                    
-                </nav>
+                <div class="divInNav">
+                    <ul class="ulNav">
+                        <div class="liBoven">
+                            <li><a class="smallLogo" href="./index.html"></a> <img src="./Imgs/smallWitLogo3.png"
+                                    width="200pt" alt="" class="logoNav"> </li>
+                            <li><a class="navHome" href="./index.html">home</a> </li>
+                            <li><a class="navFav" href="./favorites.html">favorites</a></li>
+                            <li><a class="navProf" href="./profile.html">profile</a></li>
+                        </div>
+
+                        <div class="liBeneden">
+                            <li><a class="navLogOut" href="./logIn.html">log out</a> </li>
+                        </div>
+
+
+                    </ul>
+                </div>
+            </nav>
         </article>
 
-    <!-- SEARCH RECIPES -->    
-        <article class="searching">     
+        <!-- SEARCH RECIPES -->
+        <article class="searching">
             <h1 id="goToTop">Healthy Recipes</h1>
-       
-               <p class="center">Tell us what you want and we will find the perfect recipe for you!</p>
-       
-               <article class="choice">
-       
-                   <div class="center">
-       
-                       <input class="input" style="border: 0.5px solid #FE9D2B;" type="text" placeholder="What are you hungry for?" >
-       
-                       <select name="diet" id="diet">
-       
-                           <option value="" disabled selected>diet</option>
-                           <option value="balanced">balanced</option>
-                           <option value="high-fiber">high-fiber</option>
-                           <option value="low-carb">low-carb</option>
-                           <option value="low-fat">low-fat</option>
-                           <option value="low-sodium">low-sodium</option>
-       
-                       </select>
-       
-                       <select name="country" id="country">
-       
-                           <option class="disabledSelected" disabled selected>cuisine </option>
-                           <option value="Italian">Italian </option>
-                           <option value="French">French </option>
-                           <option value="British">British </option>
-                           <option value="Chinese">Chinese </option>
-                           <option value="Japanese">Japanese </option>
-                           <option value="Asian">Asian </option>
-                           <option value="South East Asia">South East Asia </option>
-                           <option value="Eastern Europe ">Eastern Europe </option>
-                           <option value="American">American </option>
-                           <option value="South America">South America </option>
-                           <option value="Nordic">Nordic </option>
-                           <option value="Middle Eastern">Middle Eastern </option>
-                           <option value="Mediteranean">Mediteranean </option>
-                           <option value="Kosher">Kosher </option>
-                           <option value="Central">Central </option>
-                           <option value="Carribean">Carribean </option>           
-       
-                       </select>
-       
-                       <select name="meal" id="meal">
-       
-                           <option value="" disabled selected>meal </option>
-                           <option value="breakfast">dinner </option>
-                           <option value="breakfast">breakfast </option>
-                           <option value="lunch">lunch </option>
-                           <option value="snack">snack </option>
-                           <option value="teatime">teatime </option>
-       
-                       </select>
-       
-                       <button class="button"><img src="./Imgs/iconLoupe.png" alt="" width="25pt"></button>
-                   </div>
-               </article>
-       
-       
-    <!-- MAKE ONE CARD -->
-               <article class="returnRecipes">
-                       <article class="card" >
-                           <div class="oneCard" style="display: none;" > </div>  
-                       </article>
-               </article>
-       
-              <a class="top" href="#goToTop" style="display: none;"> go to top </a>
-        <div></div>
+
+            <p class="center">Tell us what you'd like to eat and we will find the perfect recipies for you!</p>
+
+            <article class="choice">
+                <div class="center">
+
+                    <input class="input" style="border: 0.5px solid #FE9D2B;" type="text"
+                        placeholder="What are you hungry for?">
+
+                    <select name="diet" id="diet">
+                        <option value="" disabled selected>diet</option>
+                        <option value="balanced">balanced</option>
+                        <option value="high-fiber">high-fiber</option>
+                        <option value="low-carb">low-carb</option>
+                        <option value="low-fat">low-fat</option>
+                        <option value="low-sodium">low-sodium</option>
+                    </select>
+
+                    <select name="country" id="country">
+                        <option class="disabledSelected" disabled selected>cuisine </option>
+                        <option value="Italian">Italian </option>
+                        <option value="French">French </option>
+                        <option value="British">British </option>
+                        <option value="Chinese">Chinese </option>
+                        <option value="Japanese">Japanese </option>
+                        <option value="Asian">Asian </option>
+                        <option value="Eastern Europe ">Eastern Europe </option>
+                        <option value="American">American </option>
+                        <option value="South America">South America </option>
+                        <option value="Nordic">Nordic </option>
+                        <option value="Middle Eastern">Middle Eastern </option>
+                        <option value="Mediteranean">Mediteranean </option>
+                        <option value="Kosher">Kosher </option>
+                    </select>
+
+                    <select name="meal" id="meal">
+                        <option value="" disabled selected>meal </option>
+                        <option value="breakfast">dinner </option>
+                        <option value="breakfast">breakfast </option>
+                        <option value="lunch">lunch </option>
+                        <option value="snack">snack </option>
+                        <option value="teatime">teatime </option>
+                    </select>
+
+                    <button class="button"><img src="./Imgs/iconLoupe.png" alt="" width="25pt"></button>
+                </div>
+
+                <div class="crud">
+                    <button type="submit" class="crudButtons" id="save" title="save searchcriteria"><img
+                            src="./Imgs/saveIcon.png" alt=""></button>
+                    <button class="crudButtons" id="edit" title="edit searchcriteria"><img src="./Imgs/editIcon.png"
+                            alt=""></button>
+                    <button class="crudButtons" id="delete" title="delete searchcriteria"><img
+                            src="./Imgs/deleteIcon.png" alt=""></button>
+                </div>
+
+            </article>
+
+
+            <!-- MAKE ONE CARD -->
+            <article class="returnRecipes">
+                <article class="card">
+                    <div class="oneCard" style="display: none;"> </div>
+                </article>
+            </article>
+
+            <a class="top" href="#goToTop" style="display: none;"> go to top </a>
         </article>
 
     </main>
 
     <script type="module" src="index.js"></script>
-   
+
 </body>
+
 </html>

@@ -1,19 +1,22 @@
-
 let generateBtn = document.querySelector(".button");
 
-generateBtn.addEventListener("click", () => { 
+generateBtn.addEventListener("click", () => {
     console.log("buttton pressed")
     fetchAPI()
 });
 
-function fetchAPI(){
+function fetchAPI() {
     const appId = "ffaf5499";
     const appKey = "174caf828a5cf1d15fb51927b57b5af1";
 
-    let input = document.querySelector(".input").value;let q = input;
-    let diet = document.querySelector("#diet").value;let dietInput = diet; 
-    let meal = document.querySelector("#meal").value;let mealInput = meal;
-    let country = document.querySelector("#country").value;let countryInput = country;  
+    let input = document.getElementsByClassName("input")[0].value;
+    let q = input; 
+    let diet = document.querySelector("#diet").value;
+    let dietInput = diet;
+    let meal = document.querySelector("#meal").value;
+    let mealInput = meal;
+    let country = document.querySelector("#country").value;
+    let countryInput = country;
 
     console.log(q);
     console.log(dietInput);
@@ -27,18 +30,18 @@ function fetchAPI(){
             // return data;
             generateCards(data)
         });
-    
-    document.querySelector(".top").style.display = "block";
-    
-}
- 
 
-function generateCards(data){
+    document.querySelector(".top").style.display = "block";
+
+}
+
+
+function generateCards(data) {
     let htmlString = "";
 
-    for(let c of data.hits){
-         htmlString += `
-         <div class="oneCard" style="display: flex; flex-direction: column;" >
+    for (let c of data.hits) {
+        htmlString += `
+         <div class="oneCard" style="display: flex; flex-direction: column;">
             <img class="cardImgs" src="${c.recipe.image}" alt="">
             <div class="cardContent">
             
@@ -56,35 +59,45 @@ function generateCards(data){
         </div>  
         `
     }
-
     document.querySelector(".card").innerHTML = htmlString;
 }
 
 
 
+function crudFunctionalities(event) {
 
 
+    let input = document.querySelector(".input").value;
+    let diet = document.querySelector("#diet").value;
+    let meal = document.querySelector("#meal").value; // document.getElementById(meal).value
+    let country = document.querySelector("#country").value;
+    console.log(input, diet, meal, country)
 
+    //fetch heruko api 
 
+    fetch('http://localhost:4000/searchCriteria', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                input,
+                diet: diet,
+                cuisine: country,
+                meal: meal
+            })
+        }).then(res => {
+            return res.json();
+        })
+        .then(data => {
+            console.log(data);
+        }).catch(error => {
+            console.log(error);
+        })
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.getElementById("save").addEventListener('click', event => {
+    event.preventDefault();
+    crudFunctionalities(event);
+})
