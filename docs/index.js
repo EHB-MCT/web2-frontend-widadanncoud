@@ -1,3 +1,4 @@
+//FETCH RECIPE API FETCH RECIPE API FETCH RECIPE API 
 let generateBtn = document.querySelector(".button");
 
 generateBtn.addEventListener("click", () => {
@@ -10,32 +11,25 @@ function fetchAPI() {
     const appKey = "174caf828a5cf1d15fb51927b57b5af1";
 
     let input = document.getElementsByClassName("input")[0].value;
-    let q = input; 
+    let q = input;
     let diet = document.querySelector("#diet").value;
     let dietInput = diet;
     let meal = document.querySelector("#meal").value;
     let mealInput = meal;
-    let country = document.querySelector("#country").value;
-    let countryInput = country;
+    let cuisine = document.querySelector("#cuisine").value;
+    let cuisineInput = cuisine;
 
-    console.log(q);
-    console.log(dietInput);
-    console.log(mealInput);
-    console.log(countryInput);
-
-    fetch(`https://api.edamam.com/search?q=${q}&mealType=${mealInput}&cuisineType=${countryInput}&diet=${dietInput}&app_id=${appId}&to=30&app_key=${appKey}&from=0&calories=591-722&health=alcohol-free`)
+    fetch(`https://api.edamam.com/search?q=${q}&mealType=${mealInput}&cuisineType=${cuisineInput}&diet=${dietInput}&app_id=${appId}&to=30&app_key=${appKey}&from=0&calories=591-722&health=alcohol-free`)
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            // return data;
             generateCards(data)
         });
 
     document.querySelector(".top").style.display = "block";
-
 }
 
-
+//GENERATE RECIPES GENERATE RECIPES GENERATE RECIPES
 function generateCards(data) {
     let htmlString = "";
 
@@ -55,45 +49,54 @@ function generateCards(data) {
                 <button class="cardFavo"> <img class="cardHaert" src="./Imgs/emoticonHeart.png" alt=""> </button>
 
             </div>  
-             
-        </div>  
-        `
+        </div>`
     }
     document.querySelector(".card").innerHTML = htmlString;
 }
 
 
-
-function crudFunctionalities(event) {
-
-
+//FETCH HEROKU API FETCH HEROKU API FETCH HEROKU API
+async function crudFunctionalities(event) {
     let input = document.querySelector(".input").value;
     let diet = document.querySelector("#diet").value;
-    let meal = document.querySelector("#meal").value; // document.getElementById(meal).value
-    let country = document.querySelector("#country").value;
-    console.log(input, diet, meal, country)
+    let meal = document.querySelector("#meal").value;
+    let cuisine = document.querySelector("#cuisine").value;
+    console.log(input, diet, meal, cuisine)
 
-    //fetch heruko api 
-
-    fetch('http://localhost:4000/searchCriteria', {
+    fetch('http://localhost:4000/saveSearchCriteria', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                input,
-                diet: diet,
-                cuisine: country,
-                meal: meal
+                "input": input,
+                "diet": diet,
+                "cuisine": cuisine,
+                "meal": meal
             })
-        }).then(res => {
+        }).then((res) => {
             return res.json();
         })
         .then(data => {
             console.log(data);
         }).catch(error => {
             console.log(error);
-        })
+        });
+
+    //const req = await fetch('http://localhost:4000/saveSearchCriteria', {
+    //    method: "POST",
+    //    headers: {
+    //        "Content-Type": "application/json",
+    //    },
+    //    body: JSON.stringify({
+    //        "input": input,
+    //        "diet": diet,
+    //        "cuisine": cuisine,
+    //        "meal": meal
+    //    })
+    //});
+    //const res = await req.json();
+    //console.log(res);
 
 }
 
