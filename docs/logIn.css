@@ -32,9 +32,11 @@ h1{
     margin-bottom: 30pt;
     padding-bottom: 10pt;
     font-family: SylfaenW01-Regular;
-    
-    
-    /* text-shadow: 1px 1px 2px rgb(158, 158, 158); */
+}
+
+h2{
+    font-family: SylfaenW01-Regular;
+    font-weight: 200;
 }
 
 .background {

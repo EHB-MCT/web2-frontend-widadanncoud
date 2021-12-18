@@ -82,22 +82,6 @@ async function crudFunctionalities(event) {
         }).catch(error => {
             console.log(error);
         });
-
-    //const req = await fetch('http://localhost:4000/saveSearchCriteria', {
-    //    method: "POST",
-    //    headers: {
-    //        "Content-Type": "application/json",
-    //    },
-    //    body: JSON.stringify({
-    //        "input": input,
-    //        "diet": diet,
-    //        "cuisine": cuisine,
-    //        "meal": meal
-    //    })
-    //});
-    //const res = await req.json();
-    //console.log(res);
-
 }
 
 document.getElementById("save").addEventListener('click', event => {
