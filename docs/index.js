@@ -1,4 +1,4 @@
-//FETCH RECIPE API FETCH RECIPE API FETCH RECIPE API 
+//FETCH RECIPE API, FETCH RECIPE API, FETCH RECIPE API 
 let generateBtn = document.querySelector(".button");
 
 generateBtn.addEventListener("click", () => {
@@ -29,7 +29,7 @@ function fetchAPI() {
     document.querySelector(".top").style.display = "block";
 }
 
-//GENERATE RECIPES GENERATE RECIPES GENERATE RECIPES
+//GENERATE RECIPES, GENERATE RECIPES, GENERATE RECIPES
 function generateCards(data) {
     let htmlString = "";
 
@@ -55,13 +55,37 @@ function generateCards(data) {
 }
 
 
-//FETCH HEROKU API FETCH HEROKU API FETCH HEROKU API
-async function crudFunctionalities(event) {
+
+
+
+
+
+//FETCH HEROKU API, FETCH HEROKU API, FETCH HEROKU API
+
+//Save searchcriteria in Mongodb
+async function postFunctionality(event) {
     let input = document.querySelector(".input").value;
     let diet = document.querySelector("#diet").value;
     let meal = document.querySelector("#meal").value;
     let cuisine = document.querySelector("#cuisine").value;
     console.log(input, diet, meal, cuisine)
+
+
+    //Create a unique user id and save it in local browser storage
+    localStorage.setItem("input", input);
+    localStorage.setItem("diet", diet);
+    localStorage.setItem("meal", meal);
+    localStorage.setItem("cuisine", cuisine);
+
+    let user_id = null;
+
+    if (localStorage.getItem("user_id")) {
+        user_id = localStorage.getItem("user_id")
+    } else {
+        user_id = Date.now().toString(36) + Math.random().toString(36).substr(2);  //create user id in local storage
+        localStorage.setItem("user_id", user_id);
+    }
+
 
     fetch('http://localhost:4000/saveSearchCriteria', {
             method: "POST",
@@ -72,7 +96,8 @@ async function crudFunctionalities(event) {
                 "input": input,
                 "diet": diet,
                 "cuisine": cuisine,
-                "meal": meal
+                "meal": meal,
+                "user_id": user_id
             })
         }).then((res) => {
             return res.json();
@@ -86,5 +111,47 @@ async function crudFunctionalities(event) {
 
 document.getElementById("save").addEventListener('click', event => {
     event.preventDefault();
-    crudFunctionalities(event);
+    postFunctionality(event);
 })
+
+
+//Save last searchcriteria in local storage
+window.addEventListener('load', () => {
+    const input = localStorage.getItem("input");
+    const diet = localStorage.getItem("diet");
+    const meal = localStorage.getItem("meal");
+    const cuisine = localStorage.getItem("cuisine");
+
+    if (input && diet && meal && cuisine) {
+        document.querySelector(".input").value = input;
+        document.querySelector("#diet").value = diet;
+        document.querySelector("#meal").value = meal;
+        document.querySelector("#cuisine").value = cuisine;
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
