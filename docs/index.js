@@ -29,6 +29,12 @@ function fetchAPI() {
     document.querySelector(".top").style.display = "block";
 }
 
+
+
+
+
+
+
 //GENERATE RECIPES, GENERATE RECIPES, GENERATE RECIPES
 function generateCards(data) {
     let htmlString = "";
@@ -70,7 +76,6 @@ async function postFunctionality(event) {
     let cuisine = document.querySelector("#cuisine").value;
     console.log(input, diet, meal, cuisine)
 
-
     //Create a unique user id and save it in local browser storage
     localStorage.setItem("input", input);
     localStorage.setItem("diet", diet);
@@ -82,7 +87,8 @@ async function postFunctionality(event) {
     if (localStorage.getItem("user_id")) {
         user_id = localStorage.getItem("user_id")
     } else {
-        user_id = Date.now().toString(36) + Math.random().toString(36).substr(2);  //create user id in local storage
+        user_id = toString(36) + Math.random();  //Create user id in local storage
+        // user_id = Date.now().toString(36) + Math.random().toString(36).substr(2);
         localStorage.setItem("user_id", user_id);
     }
 
@@ -115,13 +121,19 @@ document.getElementById("save").addEventListener('click', event => {
 })
 
 
-//Save last searchcriteria in local storage
+
+
+
+
+//Get last searchcriteria from local storage
 window.addEventListener('load', () => {
+    //Get last item that was stored in local storage 
     const input = localStorage.getItem("input");
     const diet = localStorage.getItem("diet");
     const meal = localStorage.getItem("meal");
     const cuisine = localStorage.getItem("cuisine");
 
+    //and put it in the html value
     if (input && diet && meal && cuisine) {
         document.querySelector(".input").value = input;
         document.querySelector("#diet").value = diet;

@@ -37,9 +37,9 @@ a {
 
 h1 {
     color: #FE9D2B;
-    margin-top: 0pt;
+    margin-top: 30pt;
     font-size: 60pt;
-    margin-bottom: 80pt;
+    margin-bottom: 70pt;
     text-align: center;
     text-shadow: 1px 1px 2px rgb(158, 158, 158);
     font-family: SylfaenW01-Regular;
@@ -61,6 +61,15 @@ h3 {
     color: rgb(78, 78, 78);
 }
 
+h4{
+    color: white;
+    font-family: SylfaenW01-Regular;
+    font-weight: 200;
+    margin-left: 13pt;
+    font-size: 100%;
+    font-size: 27pt;
+}
+
 h5 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 8pt;
@@ -70,7 +79,7 @@ h5 {
 
 /* NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION */
 .navi {
-    width: 10%;
+    width: 11%;
 }
 
 nav {
@@ -79,7 +88,7 @@ nav {
     padding-bottom: 1pt;
     position: fixed;
     height: 100%;
-    width: 10%;
+    width: 11%;
     top: 0;
 }
 
@@ -102,7 +111,12 @@ nav {
 }
 
 .liBeneden {
-    padding-top: 150%;
+    padding-top: 170%;
+}
+
+.smallTitel{
+    font-size: 100pt;
+    color: rgb(71, 255, 102);
 }
 
 li {
@@ -113,9 +127,31 @@ li {
 
 li a {
     color: white;
+    /* list-style: none;
+    border-bottom: none;
+    text-decoration: none; */
+    padding-top: 2pt;
+    padding-left: 15pt;
+}
+
+.navFav a{
     list-style: none;
     border-bottom: none;
     text-decoration: none;
+}
+.navHome a{
+    list-style: none;
+    border-bottom: none;
+    text-decoration: none;
+}
+.navProf a{
+    list-style: none;
+    border-bottom: none;
+    text-decoration: none;
+}
+.navLogOut a{
+    padding-bottom: 20pt;
+    border-color: tomato;
 }
 
 .logoNav {
@@ -129,7 +165,7 @@ li a {
 
 .navHome {
     background-color: rgba(255, 255, 255, 0.26);
-    width: 100%;
+    /* width: 100%; */
     padding-top: 10pt;
     padding-bottom: 10pt;
     padding-left: 20pt;
@@ -138,7 +174,7 @@ li a {
 .navFav,
 .navProf,
 .navLogOut {
-    width: 100%;
+    /* width: 100%; */
     padding-top: 10pt;
     padding-bottom: 10pt;
     padding-left: 20pt;
@@ -148,16 +184,11 @@ li a {
     background-color: rgba(255, 255, 255, 0.26);
     transition: all ease-in-out 0.2s;
 }
-
 .navProf:hover {
     background-color: rgba(255, 255, 255, 0.26);
     transition: all ease-in-out 0.2s;
 }
 
-.navLogOut:hover {
-    background-color: rgba(255, 255, 255, 0.26);
-    transition: all ease-in-out 0.2s;
-}
 
 /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
 
