@@ -10,14 +10,10 @@ function fetchAPI() {
     const appId = "ffaf5499";
     const appKey = "174caf828a5cf1d15fb51927b57b5af1";
 
-    let input = document.getElementsByClassName("input")[0].value;
-    let q = input;
-    let diet = document.querySelector("#diet").value;
-    let dietInput = diet;
-    let meal = document.querySelector("#meal").value;
-    let mealInput = meal;
-    let cuisine = document.querySelector("#cuisine").value;
-    let cuisineInput = cuisine;
+    let q = document.querySelector("input").value;
+    let dietInput = document.querySelector("#diet").value;
+    let mealInput = document.querySelector("#meal").value;
+    let cuisineInput = document.querySelector("#cuisine").value;
 
     fetch(`https://api.edamam.com/search?q=${q}&mealType=${mealInput}&cuisineType=${cuisineInput}&diet=${dietInput}&app_id=${appId}&to=30&app_key=${appKey}&from=0&calories=591-722&health=alcohol-free`)
         .then(response => response.json())
@@ -39,19 +35,19 @@ function fetchAPI() {
 function generateCards(data) {
     let htmlString = "";
 
-    for (let c of data.hits) {
+    for (let d of data.hits) {
         htmlString += `
          <div class="oneCard" style="display: flex; flex-direction: column;">
-            <img class="cardImgs" src="${c.recipe.image}" alt="">
+            <img class="cardImgs" src="${d.recipe.image}" alt="">
             <div class="cardContent">
             
-                <h3>${c.recipe.label}</h3>
+                <h3>${d.recipe.label}</h3>
                 
-                <h5>${c.recipe.dietLabels}</h5>
-                <h5>${c.recipe.mealType}</h5>
-                <h5>${c.recipe.cuisineType}</h5>
+                <h5>${d.recipe.dietLabels}</h5>
+                <h5>${d.recipe.mealType}</h5>
+                <h5>${d.recipe.cuisineType}</h5>
 
-                <button class="cardRecipe"><a target="_blank" href="${c.recipe.url}">recipe</a></button>
+                <button class="cardRecipe"><a target="_blank" href="${d.recipe.url}">recipe</a></button>
                 <button class="cardFavo"> <img class="cardHaert" src="./Imgs/emoticonHeart.png" alt=""> </button>
 
             </div>  
@@ -85,10 +81,9 @@ async function postFunctionality(event) {
     let user_id = null;
 
     if (localStorage.getItem("user_id")) {
-        user_id = localStorage.getItem("user_id")
+        user_id = localStorage.getItem("user_id") //If there is already a user_id don't change anything
     } else {
-        user_id = toString(36) + Math.random();  //Create user id in local storage
-        // user_id = Date.now().toString(36) + Math.random().toString(36).substr(2);
+        user_id = toString(36) + Math.random(); //Create user id in local storage
         localStorage.setItem("user_id", user_id);
     }
 
@@ -141,29 +136,3 @@ window.addEventListener('load', () => {
         document.querySelector("#cuisine").value = cuisine;
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
