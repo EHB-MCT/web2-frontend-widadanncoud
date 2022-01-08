@@ -4,7 +4,7 @@ let generateBtn = document.querySelector(".button");
 generateBtn.addEventListener("click", () => {
     console.log("buttton pressed")
     fetchAPI()
-});
+}); 
 
 function fetchAPI() {
     const appId = "ffaf5499";
@@ -88,7 +88,7 @@ async function postFunctionality(event) {
     }
 
 
-    fetch('http://localhost:4000/saveSearchCriteria', {
+    fetch('https://web2-backend-widadanncoud.herokuapp.com/saveSearchCriteria', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
